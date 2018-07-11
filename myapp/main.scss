@@ -1,0 +1,109 @@
+@import '@/lib/reset.scss';
+
+html, body, #root, .container {
+    @include rect(100%, 100%);
+		@include background-color(#fff);
+
+}
+.container {
+   @include flexbox();
+   @include flex-direction(column);
+   .main{
+     @include flex();
+     @include rect(100%, auto);
+     @include flexbox();
+     @include flex-direction(column);
+     header{
+     		@include rect(100%, 0.45rem);
+     		@include background-color(#f6f6f6);
+		    @include flexbox();
+		    @include text-color(#fff);
+	        .left{
+				   @include rect(3rem, auto);
+            @include flexbox();
+				   @include flex-direction(column);
+				   @include justify-content();
+				   @include align-items();
+               input{
+					           @include rect(2.7rem,0.35rem)
+                     @include margin(0 0 0 0.5rem)
+                     @include border(none)
+					   
+				   }
+			  }
+			  .right{
+				  	@include rect(1rem, auto);
+				  	@include flexbox();
+				  	@include flex-direction(column);
+				  	@include justify-content();
+				  	@include align-items();
+					i{
+						@include flexbox();
+						@include flex-direction(column);
+						@include justify-content();
+						@include align-items();
+						@include font-size(0.22rem);
+						@include text-color(black)
+
+					} 
+				 p{
+					@include text-color(black) 
+				 }
+			  }
+	   }
+	   .conent{
+			    
+		   		@include overflow();
+		   .news{
+			   @include rect(100%,0.4rem)
+		   }
+	   }
+		 .footer{
+			  @include rect(100%, 0.5rem);
+        @include background-color(red);
+				ul{
+				 @include flex();
+         @include rect(100%, 100%);
+         @include flexbox();
+				  //@include flex-direction(column);
+				 // @include justify-content();
+				 //@include align-items();
+         li{
+           //@include flex();
+           @include rect(auto, 100%);
+					  i{
+								@include flexbox();
+								@include flex-direction(column);
+								@include justify-content();
+								@include align-items();
+								@include font-size(0.12rem);
+								@include text-color(black)
+							} 
+						 p{
+							@include flexbox();
+							@include flex-direction(column);
+							@include justify-content();
+							@include align-items();
+							@include font-size(0.12rem);
+							@include text-color(black)
+						 }
+           }
+					 }
+					 .P_1{
+						 @include flex();
+						 @include rect(auto, 100%);
+						 @include flex-direction(column);
+						 @include justify-content();
+					   @include align-items();
+					 }
+					 .P_2{
+					 	@include flex();
+					 	@include rect(auto, 100%);
+					 	@include flex-direction(column);
+					 	@include justify-content();
+					 	@include align-items();
+					 }
+				
+		  }
+	  }
+	 }
